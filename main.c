@@ -10,7 +10,7 @@
  */
 #include "robot.h"
 #include "garciah16.h"
-
+#include "henness17.h"
 /**
  * main()
  *
@@ -27,6 +27,8 @@ int main(int argc, const char * argv[])
     printf("usage: %s <number> \n", argv[0]);
     return -1;
   }
+
+  henness17();
 
   // Convert the command-line argument to a number.
   int num = atoi(argv[1]);
