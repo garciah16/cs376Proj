@@ -9,7 +9,8 @@
  *
  */
 #include "robot.h"
-#include "henness17.c"
+#include "garciah16.h"
+#include "henness17.h"
 /**
  * main()
  *
@@ -35,6 +36,8 @@ int main(int argc, const char * argv[])
   robPrintAscii();
 
   robPrintMessage(num);
+
+  garciah16();
 
   return 0;
 }
