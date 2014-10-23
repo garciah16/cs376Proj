@@ -6,6 +6,7 @@
  *
  * @author Tanya L. Crenshaw
  * @author Ryan Henness
+ *         Hunter Garcia
  * @since August 2013
  *
  */
