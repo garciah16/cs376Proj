@@ -12,6 +12,8 @@
  */
 
 #include "robot.h"
+#include "string.h"
+#include "stdlib.h"
 
 /**
  * robPrintMessage
@@ -48,9 +50,24 @@ void robPrintMessage(int num)
  */
 void robPrintAscii(void)
 {
-  printf("    i_i    \n"
-	 "   [*_*]   \n"
-	 "  /|___|\\  \n"
-         "   d   b   "); 
+   int i= 0;
+   char* space = "";
+  
+   for(i; i < 3; i++)
+    {
+      if (i == 1)
+	{
+	  space = "     ";
+	}
+      else if(i == 2)
+	{
+	  space = "          ";
+	}
+  printf("%s"    "    i_i    \n"
+	 "%s"    "   [*_*]   \n"
+	 "%s"    "  /|___|\\  \n"
+	 "%s"    "   d   b   \n", space, space, space, space);
+   
+      }
 
 }
